@@ -5,6 +5,10 @@
 The NeoPixelPiClock is [one of my machines](https://github.com/richelbilderbeek/Machines) that uses Arduino.
 It is a clock that displays the time in binary (using NeoPixels) and beeps at pi o'clock PM.
 
+![NeoPixelPiClock](PiClocks.jpg)
+
+Thanks to James Rosindell for the picture.
+
 [Movie of the PiClock ticking (.mpg) ](PiClock.mpg)
 
 ![Pi Clock 1](PiClockFront1.jpg)
