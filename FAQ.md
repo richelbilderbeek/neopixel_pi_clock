@@ -2,7 +2,7 @@
 
 ## How do I read the time?
 
-See [how to read the time](HowToReadTheTime.md).
+See [how to read the time](https://github.com/richelbilderbeek/neopixel_pi_clock#how-to-read-the-time).
 
 ## Can the PiClock be powered by USB?
 
