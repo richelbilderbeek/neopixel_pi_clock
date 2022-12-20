@@ -1,7 +1,5 @@
 # NeoPixelPiClock
 
-[![Build Status](https://travis-ci.org/richelbilderbeek/NeoPixelPiClock.svg?branch=master)](https://travis-ci.org/richelbilderbeek/NeoPixelPiClock)
-
 The NeoPixelPiClock is [one of my machines](https://github.com/richelbilderbeek/Machines) that uses Arduino.
 It is a clock that displays the time in binary (using NeoPixels) and beeps at pi o'clock PM.
 
