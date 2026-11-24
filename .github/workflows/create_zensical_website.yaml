@@ -1,7 +1,6 @@
 # Adapted from https://zensical.org/docs/publish-your-site/#with-github-actions
 name: Create Zensical website
 
-
 on:
   workflow_dispatch:
   push:
@@ -17,11 +16,12 @@ permissions:
   pages: write
   id-token: write
 
+concurrency:
+  group: pages
+  cancel-in-progress: false
+
 jobs:
-  create_zensical_website:
-    environment:
-      name: github-pages
-      url: ${{ steps.deployment.outputs.page_url }}
+  build:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/configure-pages@v5
@@ -34,4 +34,13 @@ jobs:
       - uses: actions/upload-pages-artifact@v4
         with:
           path: site
-      - uses: actions/deploy-pages@v4
+
+  deploy:
+    needs: build
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    runs-on: ubuntu-latest
+    steps:
+      - id: deployment
+        uses: actions/deploy-pages@v4
