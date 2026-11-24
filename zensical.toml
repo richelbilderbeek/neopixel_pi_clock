@@ -1,7 +1,7 @@
 [project]
 site_name = "NeoPixelPiClock"
-site_url = "https://richelbilderbeek.github.io/neopixelpiclock/"
-repo_url = "https://github.com/richelbilderbeek/NeoPixelPiClock"
+site_url = "https://richelbilderbeek.github.io/neopixel_pi_clock/"
+repo_url = "https://github.com/richelbilderbeek/neopixel_pi_clock"
 edit_uri = "blob/master/docs/"
 
 
